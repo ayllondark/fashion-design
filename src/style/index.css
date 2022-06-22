@@ -1,0 +1,179 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+ul{
+    list-style: none;
+}
+
+
+/* NAVBAR */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.navbar >div{
+    padding: 0 30px;
+    font-size: 20px;
+}
+
+.navbar .menu{
+  margin-right: auto;
+}
+
+.navbar .lang{
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* SOCIAL MEDIA */
+
+.media ul{
+  position: absolute;
+  bottom: 250px;
+  left: -140px;
+  transform: rotate(-90deg);
+}
+
+.media ul li{
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 0 30px;
+}
+
+/* TEXT */
+
+.text{
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  transform: rotate(-90deg);
+}
+
+.text h1{
+  font-size: 120px;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 20px;
+  letter-spacing: -10px;
+  position: relative;
+  overflow: hidden;
+  height: 150px;
+  width: 600px;
+}
+
+.text h1 .hideText{
+  position: absolute;
+}
+
+.text h2{
+
+  position: absolute;
+  top: 40px;
+  left: -80px;
+  color: #f5a0ea;
+  z-index: -1;
+  font-size: 150px;
+  font-weight: 600;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.text h3{
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1;
+  position: relative;
+  overflow: hidden;
+  height: 80px;
+}
+
+/* hidetext for GSAP Animation */
+.text h3 .hideText{
+  position: absolute;
+}
+
+.text p{
+  width: 200px;
+  font-size: 12px;
+  margin-top: 30px;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  height: 110px;
+}
+
+.text p .hideText{
+  position: absolute;
+}
+
+
+/* SPONSOR */
+.sponsor{
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+  text-align: center;
+}
+
+.sponsor img{
+  width: 200px;
+  transform: rotate(-90deg);
+}
+
+.sponsor p{
+  margin-top: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 900;
+  transform: rotate(180deg);
+}
+
+/* Distortion */
+.distortions{
+  width: 580px;
+  height: 720px;
+  position: absolute;
+  right: 300px;
+  bottom: 0;
+}
+
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  z-index: 99;
+}
+
+.overlay.first{
+  background: #f5a0ea;
+}
+
+.overlay.second{
+  background: #f5a0ea;
+  left: 33.3%;
+}
+
+.overlay.third{
+  background: #f5a0ea;
+  left: 66.6%;
+}

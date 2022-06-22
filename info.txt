@@ -1,0 +1,4 @@
+
+npm i three hover-effect
+npm install gsap
+npm i @reacticons/ionicons
